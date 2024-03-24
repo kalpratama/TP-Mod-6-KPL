@@ -1,0 +1,15 @@
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\bin\Debug\net8.0\TPMod6.exe
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\bin\Debug\net8.0\TPMod6.deps.json
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\bin\Debug\net8.0\TPMod6.runtimeconfig.json
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\bin\Debug\net8.0\TPMod6.dll
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\bin\Debug\net8.0\TPMod6.pdb
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.AssemblyInfoInputs.cache
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.AssemblyInfo.cs
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.csproj.CoreCompileInputs.cache
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.sourcelink.json
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.dll
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\refint\TPMod6.dll
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.pdb
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\TPMod6.genruntimeconfig.cache
+C:\Users\kalpr\Documents\College\Codings\KPL\Week6\TPMod6\TPMod6\obj\Debug\net8.0\ref\TPMod6.dll

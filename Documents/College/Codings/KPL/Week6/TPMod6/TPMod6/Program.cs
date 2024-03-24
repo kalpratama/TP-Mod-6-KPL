@@ -1,47 +1,69 @@
 ﻿using System;
 
-public class SayaTubeVideo
+class SayaTubeVideo
 {
     private int id;
     private string title;
     private int playCount;
-    private static readonly Random random = new Random();
 
-    // Constructor
-    public SayaTubeVideo(string videoTitle)
+    public SayaTubeVideo(string title)
     {
-        id = random.Next(10000, 99999); // Generate random 5-digit ID
-        title = videoTitle;
+        Random rnd = new Random();
+        id = rnd.Next(10000, 99999);
+        this.title = title;
         playCount = 0;
     }
 
-    // Method to increase play count
     public void IncreasePlayCount(int count)
     {
-        playCount += count;
+        // Precondition: Judul video memiliki panjang maksimal 100 karakter dan tidak null
+        if (title == null || title.Length > 100)
+        {
+            throw new ArgumentException("Judul video harus memiliki panjang maksimal 100 karakter dan tidak null.");
+        }
+
+        // Precondition: Input penambahan play count maksimal 10.000.000 per panggilan method-nya
+        if (count < 0 || count > 10000000)
+        {
+            throw new ArgumentOutOfRangeException("Jumlah penambahan play count harus antara 0 dan 10.000.000.");
+        }
+
+        try
+        {
+            // Exception Handling: Pastikan jumlah penambahan play count tidak melebihi batas tertinggi integer (overflow)
+            checked
+            {
+                playCount += count;
+            }
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: Overflow terjadi saat menambahkan play count.");
+        }
     }
 
-    // Method to print video details
     public void PrintVideoDetails()
     {
-        Console.WriteLine($"Video ID: {id}");
-        Console.WriteLine($"Title: {title}");
-        Console.WriteLine($"Play Count: {playCount}");
+        Console.WriteLine("ID: " + id);
+        Console.WriteLine("Title: " + title);
+        Console.WriteLine("Play Count: " + playCount);
     }
 }
 
-class Program
+class MainClass
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        // Create an instance of SayaTubeVideo with title
-        string videoTitle = "Tutorial Design By Contract – [NAMA_PRAKTIKAN]";
-        SayaTubeVideo video = new SayaTubeVideo(videoTitle);
+        // Membuat objek SayaTubeVideo dengan judul video
+        SayaTubeVideo video = new SayaTubeVideo("Tutorial Design By Contract – Kal El Pratama");
 
-        // Increase play count
-        video.IncreasePlayCount(1); // You can specify any number to increase play count
+        // Memanggil method IncreasePlayCount untuk menguji prekondisi dan exception
+        for (int i = 0; i < 5; i++)
+        {
+            video.IncreasePlayCount(2000000); // Menaikkan play count sebanyak 2.000.000 per panggilan
+        }
 
-        // Print video details
+        // Memanggil method PrintVideoDetails untuk mencetak detail video
         video.PrintVideoDetails();
     }
 }
